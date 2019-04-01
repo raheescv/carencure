@@ -1,0 +1,118 @@
+/*=====================jquery menu ==================*/
+/* first level > list */
+ul.ds {
+	z-index: 1000;
+}
+
+/* first level > list items */
+ul.ds li {
+	float: left;
+	position: relative;
+
+	line-height: 1em;
+	z-index: 1001;
+}
+
+/* first level > link style */
+ul.ds li a, ul.ds li a:visited {
+	position: relative;
+	display: block;
+	
+	padding: 0.7em 1em;
+	line-height: 1em;
+	text-decoration: none;
+	color: #fff;
+	border-left:solid 1px #b1495b;
+	border-right:solid 1px #7b1527;
+	
+	
+}
+
+/* first level > link style > hover */
+ul.ds li a:hover {
+	color: #FFFF00;
+	background:#8c182d;
+}
+
+/* indicators */
+ul.ds li div.indicator {
+}
+
+ul.ds li div.indicator a {
+padding-right:20px;
+	background-image: url("indicators.png");
+	background-position: right 12px;
+	background-repeat: no-repeat;
+}
+
+/* open state and hover style */
+ul.ds li.open div.indicator a, ul.ds li div.indicator a:hover {
+	color: #FFFF00;
+	background-color: #7b1527;
+	background-position: right -140px;
+	
+}
+
+/* second level > list */
+ul.ds li ul {
+	position: absolute;
+	left: 0;
+	visibility: hidden;
+	z-index: 1001;
+}
+
+/* second level > list items (override first level > list items) */
+ul.ds li ul li {
+	float: none;
+	margin: 0;
+	/*display: inline;*/
+}
+
+/* second level > link style */
+ul.ds li ul li a, ul.ds li ul li a:visited {
+	padding: 0.5em 1em;
+	color: #eee !important;
+	background-image: none;
+	background-color: #9e1b32;
+	
+}
+
+/* individual styling of first list link style */
+ul#dsList-1 li a, ul#dsList-1 li a:visited {
+	
+	
+}
+
+/* second level > link style > hover */
+ul.ds li ul li a:hover {
+	color: #FFFF00 !important;
+	 !important;
+	 background:#7B1527;
+}
+
+/* clickstream */
+ul.ds li.clickstream a {
+	color: #5cbeff;
+}
+
+ul.ds li.clickstream div.indicator a {
+	background-position: right -64px;
+}
+
+ul.ds li.open.clickstream div.indicator a, ul.ds li.clickstream div.indicator a:hover {
+	background-position: right -140px;
+}
+
+ul.ds li ul li.clickstream a {
+	color: #5cbeff !important;
+	background-color: #000 !important;
+}
+
+
+
+div.dsClear { /* to clear the floated list items */
+	clear: both;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
