@@ -215,171 +215,195 @@
                           </ul>
                           <div class="tab-content">
                               <div id="Location_tab" class="tab-pane fade in active">
-                                <h3>Location</h3>
+                                <div class="row">
+                                    <div class="col-lg-12"><br>
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h5 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><h3>Location +</h3></a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse">
+                                                    <div class="panel-body">
+                                                        <div class="row">
+                                                            <div class="col-lg-10">
+                                                                <label>Location Name</label>
+                                                                <input type="text" id='location_name' name="">
+                                                            </div>
+                                                            <div class="col-lg-2"><br>
+                                                                <button class="btn btn-success" id='add_Location'>Add Location</button>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover table-striped" id='LocationdataTable' width="100%">
+                                           <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Name</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="Showroom_tab" class="tab-pane fade">
+                                <h3>Showroom</h3>
                                 <div class="table-responsive">
-                                    <table class="table table-bordered table-hover table-striped" id='LocationdataTable' width="100%">
-                                       <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Name</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    </tbody>
-                                </table>
+                                    <table class="table table-bordered table-hover table-striped" id='ShowroomdataTable' width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Location</th>
+                                                <th>ShowRoom</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
-                        <div id="Showroom_tab" class="tab-pane fade">
-                            <h3>Showroom</h3>
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped" id='ShowroomdataTable' width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Location</th>
-                                            <th>ShowRoom</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div id="Pharmacy_tab" class="tab-pane fade">
-                            <h3>Pharmacy</h3>
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped" id='PharmacydataTable' width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Pharmacy</th>
-                                            <th>ShowRoom</th>
-                                            <th>Location</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    </tbody>
-                                </table>
+                            <div id="Pharmacy_tab" class="tab-pane fade">
+                                <h3>Pharmacy</h3>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped" id='PharmacydataTable' width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Pharmacy</th>
+                                                <th>ShowRoom</th>
+                                                <th>Location</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> <!-- /.col-md-12 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-</section>
+                </div> <!-- /.col-md-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
 
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="widget-ft widget-about">
-                    <div id="logo-ft">
-                        <a href="#" title="">
-                            <img src="images/logo-ft.png" alt="">
-                        </a>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget-ft widget-about">
+                        <div id="logo-ft">
+                            <a href="#" title="">
+                                <img src="images/logo-ft.png" alt="">
+                            </a>
+                        </div>
+                        <p>We have a dedicated corporate division that caters to the medical needs of over 96 major corporate clients in Qatar. We provide our corporate clients with customized health . 
+                        </p>
+                        <ul class="social">
+                            <li>
+                                <a href="#" title="">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>   
+                    </div><!-- /.widget-text -->
+                </div><!-- /.col-md-3 col-sm-6 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget-ft widget-services">
+                        <h3 class="title">Quicklink</h3>
+                        <ul class="one-half first">
+                            <li><a href="#" title="">Home</a></li>
+                            <!--<li><a href="#" title="">About us</a></li>-->
+
+                            <li><a href="#" title="">Promotion</a></li>
+                            <li>
+                                <a href="" title=""> Med Club</a>
+
+                            </li>
+
+                        </ul><!-- /.one-half -->
+                        <ul class="one-half">
+
+                            <!--<li><a href="#" title="">Careers</a></li>-->
+                            <li><a href="#" title="">Find us</a></li>
+
+                            <li><a href="#" title="">Contact us</a></li>
+                            <li> 
+                               <li><a href="#" title="">News & Evants</a></li>
+                               <li>
+                                <a href="http://carencurewebstore.com/" target="_blank" title="">Webstore</a>
+
+                            </li>
+                        </ul><!-- /.one-half -->
+                        <div class="clearfix"></div>
+                    </div><!-- /.widget-services -->
+                </div><!-- /.col-md-3 col-sm-6 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget-ft widget-lastest">
+                        <h3 class="title">Latest Twitter</h3>
+                        <a class="twitter-timeline" data-height="200" data-theme="dark" href="https://twitter.com/CareNCureQatar">Tweets by bloom_entertain</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div><!-- /.widget-services -->
+                </div><!-- /.col-md-3 col-sm-6 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget-ft widget-subscribe">
+                        <h3 class="title"> Get in touch with us</h3>
+
+                        CARE N CURE QATAR <br>
+                        P. O. Box 23094, Doha-Qatar<br>
+                        T: + 974 44507442/3 <br>
+                        F: +974 44507445<br>
+
+                        E: info@carencureqatar.com <br>
+
+                        W: www.carencureqatar.com<br>
+
+                    </div><!-- /.widget-subscribe -->
+                </div><!-- /.col-md-3 col-sm-6 -->
+            </div><!-- /.row .widget-box -->
+        </div><!-- /.container -->          
+    </footer><!-- /#footer -->
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>© Copyright <a href="#" title="">Care n Cure 2018</a>. All Rights Reserved.</p>
                     </div>
-                    <p>We have a dedicated corporate division that caters to the medical needs of over 96 major corporate clients in Qatar. We provide our corporate clients with customized health . 
-                    </p>
-                    <ul class="social">
-                        <li>
-                            <a href="#" title="">
-                                <i class="fa fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                        </li>
-                    </ul>   
-                </div><!-- /.widget-text -->
-            </div><!-- /.col-md-3 col-sm-6 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="widget-ft widget-services">
-                    <h3 class="title">Quicklink</h3>
-                    <ul class="one-half first">
-                        <li><a href="#" title="">Home</a></li>
-                        <!--<li><a href="#" title="">About us</a></li>-->
-
-                        <li><a href="#" title="">Promotion</a></li>
-                        <li>
-                            <a href="" title=""> Med Club</a>
-
-                        </li>
-
-                    </ul><!-- /.one-half -->
-                    <ul class="one-half">
-
-                        <!--<li><a href="#" title="">Careers</a></li>-->
-                        <li><a href="#" title="">Find us</a></li>
-
-                        <li><a href="#" title="">Contact us</a></li>
-                        <li> 
-                           <li><a href="#" title="">News & Evants</a></li>
-                           <li>
-                            <a href="http://carencurewebstore.com/" target="_blank" title="">Webstore</a>
-
-                        </li>
-                    </ul><!-- /.one-half -->
-                    <div class="clearfix"></div>
-                </div><!-- /.widget-services -->
-            </div><!-- /.col-md-3 col-sm-6 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="widget-ft widget-lastest">
-                    <h3 class="title">Latest Twitter</h3>
-                    <a class="twitter-timeline" data-height="200" data-theme="dark" href="https://twitter.com/CareNCureQatar">Tweets by bloom_entertain</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div><!-- /.widget-services -->
-            </div><!-- /.col-md-3 col-sm-6 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="widget-ft widget-subscribe">
-                    <h3 class="title"> Get in touch with us</h3>
-
-                    CARE N CURE QATAR <br>
-                    P. O. Box 23094, Doha-Qatar<br>
-                    T: + 974 44507442/3 <br>
-                    F: +974 44507445<br>
-
-                    E: info@carencureqatar.com <br>
-
-                    W: www.carencureqatar.com<br>
-
-                </div><!-- /.widget-subscribe -->
-            </div><!-- /.col-md-3 col-sm-6 -->
-        </div><!-- /.row .widget-box -->
-    </div><!-- /.container -->          
-</footer><!-- /#footer -->
-
-<div class="footer-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="copyright">
-                    <p>© Copyright <a href="#" title="">Care n Cure 2018</a>. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
-    </div>
-</div><!-- /.footer-bottom -->
+    </div><!-- /.footer-bottom -->
 
-<div class="button-go-top">
-    <a href="#" title="" class="go-top">
-       <i class="fa fa-chevron-up"></i>
-   </a>
-</div>
+    <div class="button-go-top">
+        <a href="#" title="" class="go-top">
+           <i class="fa fa-chevron-up"></i>
+       </a>
+   </div>
 
 </div> <!-- /.boxed -->
 
@@ -427,6 +451,12 @@
             "url":"http://localhost/study/carencure/admin/location_datatable_ajax.php",
             "dataType":"json",
             "type":"POST",
+            error: function(){
+                $(".LocationdataTable-error").html("");
+                $("#LocationdataTable").append('<tbody class="LocationdataTable-error"><tr><th colspan="3">No data found in the server</th></tr></tbody>');
+                $("#LocationdataTable_processing").css("display","none");
+
+            },
             data:function(d){
             },
         },
@@ -439,6 +469,9 @@
         {"data":"key",'visible':true},
         {"data":"name"},
         {"data":"action"},
+        ],
+        "columnDefs": [
+        { "targets": [ 1 ],"width": "80%", },
         ],
     });
     var ShowroomdataTable=$('#ShowroomdataTable').dataTable();
